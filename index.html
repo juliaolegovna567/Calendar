@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Календарь</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<header>
+		<h1 class="title">Календарь Январь 2025</h1>
+		<p class="subtitle">С праздником! Желаем счастья, здоровья и много-много всего</p>
+	</header>
+
+	<div class="calendar">
+		<div class="days-of-week">
+			<div class="day">ПН</div>
+			<div class="day">ВТ</div>
+			<div class="day">СР</div>
+			<div class="day">ЧТ</div>
+			<div class="day">ПТ</div>
+			<div class="day">СБ</div>
+			<div class="day">ВС</div>
+		</div>
+
+		<div class="days">
+			<div class="day-number"></div>
+			<div class="day-number"></div>
+
+
+			<div class="day-number" onclick="showTooltip(this)">1</div>
+			<div class="tooltip">Начни год с улыбки</div>
+
+			<div class="day-number" onclick="showTooltip(this)">2</div>
+			<div class="tooltip">Выпей 2 литра воды</div>
+
+			<div class="day-number" onclick="showTooltip(this)">3</div>
+			<div class="tooltip">Сходи погуляй с друзьями</div>
+
+			<div class="day-number" onclick="showTooltip(this)">4</div>
+			<div class="tooltip">Увидься с родственниками</div>
+
+			<div class="day-number" onclick="showTooltip(this)">5</div>
+			<div class="tooltip">Прочитай 10 страниц</div>
+
+			<div class="day-number" onclick="showTooltip(this)">6</div>
+			<div class="tooltip">Встань в 6 утра</div>
+
+			<div class="day-number" onclick="showTooltip(this)">7</div>
+			<div class="tooltip">Сходи погуляй на 3 часа</div>
+
+			<div class="day-number" onclick="showTooltip(this)">8</div>
+			<div class="tooltip">Приберись в квартире</div>
+
+			<div class="day-number">9</div>
+			<div class="day-number">10</div>
+			<div class="day-number">11</div>
+			<div class="day-number">12</div>
+
+			<div class="day-number">13</div>
+			<div class="day-number">14</div>
+			<div class="day-number">15</div>
+			<div class="day-number">16</div>
+			<div class="day-number">17</div>
+			<div class="day-number">18</div>
+			<div class="day-number">19</div>
+
+			<div class="day-number">20</div>
+			<div class="day-number">21</div>
+			<div class="day-number">22</div>
+			<div class="day-number">23</div>
+			<div class="day-number">24</div>
+			<div class="day-number">25</div>
+			<div class="day-number">26</div>
+
+			<div class="day-number">27</div>
+			<div class="day-number">28</div>
+			<div class="day-number">29</div>
+			<div class="day-number">30</div>
+			<div class="day-number">31</div>
+			<div class="day-number"></div>
+			<div class="day-number"></div>
+		</div>
+	</div>
+
+<script>
+	function showTooltip(dayElement){
+		const tooltip = dayElement.nextElementSibling;
+		tooltip.style.display=tooltip.style.display=== 'block'?'none':'block';
+	}
+
+</script>
+
+
+
+</div>
+	
+</body>
+</html>
